@@ -12,7 +12,7 @@ const ShowInvoice = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/invoice/${id}`)
+      .get(`https://delhi-digital-co-assignment-backend.onrender.com/invoice/${id}`)
       .then((response) => {
         setInvoice(response.data);
         setLoading(false);
