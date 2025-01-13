@@ -30,7 +30,7 @@ const Login = () => {
     
 
     try {
-      const result = await axios.post("https://delhi-digital-co-assignment-backend.onrender.com", data);
+      const result = await axios.post("https://delhi-digital-co-assignment-backend.onrender.com/invoice/login", data);
 
       if (result.status === 201) {
         console.log("Login successful");
