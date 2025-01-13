@@ -36,7 +36,7 @@ const Signup = () => {
     
 
     try {
-      const result = await axios.post("http://localhost:5555/invoice/signup", data);
+      const result = await axios.post("https://delhi-digital-co-assignment-backend.onrender.com/invoice/signup", data);
 
       if (result.status === 201) {
         console.log("Signup successful");
