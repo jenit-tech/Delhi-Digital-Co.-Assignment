@@ -24,7 +24,7 @@ const CreateInvoice = () => {
     };
     setLoading(true);
     axios
-      .post('http://localhost:5555/invoice', data)
+      .post('https://delhi-digital-co-assignment-backend.onrender.com/invoice', data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Invoice Created successfully', { variant: 'success' });
