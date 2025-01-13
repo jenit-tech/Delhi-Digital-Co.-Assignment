@@ -18,7 +18,7 @@ const EditInvoice = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5555/invoice/${id}`)
+    axios.get(`https://delhi-digital-co-assignment-backend.onrender.com/invoice/${id}`)
       .then((response) => {
         setInvoiceNumber(response.data.invoiceNumber);
         setClientName(response.data.clientName)
