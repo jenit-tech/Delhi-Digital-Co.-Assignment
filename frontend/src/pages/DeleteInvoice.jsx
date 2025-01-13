@@ -14,7 +14,7 @@ const DeleteInvoice = () => {
   const handleDeleteInvoice = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:5555/invoice/${id}`)
+      .delete(`https://delhi-digital-co-assignment-backend.onrender.com/invoice/${id}`)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Invoice Deleted successfully', { variant: 'success' });
