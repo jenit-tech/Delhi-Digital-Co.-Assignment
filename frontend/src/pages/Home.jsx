@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:5555/invoice')
+      .get('https://delhi-digital-co-assignment-backend.onrender.com/invoice')
       .then((response) => {
         setInvoice(response.data.data);
         setLoading(false);
