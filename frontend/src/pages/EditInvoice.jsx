@@ -39,7 +39,7 @@ const EditInvoice = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5555/invoice/${id}`, data)
+      .put(`https://delhi-digital-co-assignment-backend.onrender.com/invoice/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Invoice Edited successfully', { variant: 'success' });
