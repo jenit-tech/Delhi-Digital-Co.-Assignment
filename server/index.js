@@ -21,7 +21,7 @@ app.get('/', (request, response) => {
 app.use('/invoice', invoiceRoute);
 
 mongoose
-  .connect('mongodb+srv://root:root@cluster.xg5hu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster'
+  .connect('mongodb+srv://jenitjosephjose:RSxY5vKUrnO1xeXM@cluster.xg5hu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster'
 )
   .then(() => {
     console.log('App connected to database');
