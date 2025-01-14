@@ -104,7 +104,7 @@ const EditInvoice = () => {
             onChange={(e) => setStatus(e.target.value)}
             className="border-2 border-gray-500 px-4 py-2 w-full"
           >
-            <option value="">Select Status</option>
+            
             <option value="Paid">Paid</option>
             <option value="Unpaid">Unpaid</option>
             <option value="Pending">Pending</option>
