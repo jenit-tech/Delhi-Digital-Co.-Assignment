@@ -97,15 +97,20 @@ const EditInvoice = () => {
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
-        <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Status</label>
-          <input
-            type='number'
+        <div className="my-4">
+          <label className="text-xl mr-4 text-gray-500">Status</label>
+          <select
             value={status}
             onChange={(e) => setStatus(e.target.value)}
-            className='border-2 border-gray-500 px-4 py-2  w-full '
-          />
+            className="border-2 border-gray-500 px-4 py-2 w-full"
+          >
+            <option value="">Select Status</option>
+            <option value="Paid">Paid</option>
+            <option value="Unpaid">Unpaid</option>
+            <option value="Pending">Pending</option>
+          </select>
         </div>
+       
        
         <button className='p-2 bg-sky-300 m-8' onClick={handleEditInvoice}>
           Save
